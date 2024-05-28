@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+    .logo{
+      width: 70px;
+    }
+    #navbar{
+      background-color: rgb(231, 153, 179);
+    }
+    
+#but{
+ background-color: rgb(123, 55, 114);
+}
+body{
+  background-image: url(back.jpeg);
+  background-repeat: no-repeat;
+background-size: 100% 150%;
+
+
+}
+#menu{
+  background-color: rgb(123, 55, 114);
+}
+#choc{
+  
+  width: 20rem;
+  height: 15rem;
+}
+#card1{
+  width: 20rem;
+  margin-left: 20px;
+}
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid" id="navbar">
+        <a class="navbar-brand" href="#"><h5><img src="logo.jpeg" class="logo"> <i>IceCreamHut  </i></h5></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Services</a>
+            </li>
+          </li>
+          </ul>
+          <form class="d-flex" id="search" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" id="but" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="dropdown" >
+      <button style="margin-left: 5px; margin-top: 5px;" class="btn btn-secondary dropdown-toggle" id="menu"type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Menu
+      </button>
+      <ul class="dropdown-menu" >
+        <li><button class="dropdown-item" type="button">chocolate ice</button></li>
+        <li><button class="dropdown-item" type="button">vanilla</button></li>
+        <li><button class="dropdown-item" type="button">butter scotch</button></li>
+      </ul>
+    </div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small class="text-body-secondary">11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+    <div class="card-group" style=" margin-left: 50px; width: 40rem; height: 10rem; margin-top: 15px;">
+      <div class="card" id="card1">
+        <img id="choc" src="choc.jpeg" class="card-img-top" alt="chocolate.img">
+        <div class="card-body">
+          <h5 class="card-title">Chocolate Flavour</h5>
+          <p class="card-text">Creamy dessert that combines the smoothness of premium ice cream with the deep, indulgent flavors of fine chocolate. </p>
+          <p class="card-text"><small class="text-body-secondary">available</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="vanilla.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Vanilla Flavour</h5>
+          <p class="card-text">Vanilla ice cream is a classic and universally loved dessert that features the subtle, sweet, and creamy taste of vanilla as its primary flavor.</p>
+          <p class="card-text"><small class="text-body-secondary">available</small></p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="card-group" style="margin-bottom: 50px; margin-left: 50px; width: 40rem; height: 10rem; margin-top: 200px;">
+      <div class="card" id="card1">
+        <img  src="straw.webp" class="card-img-top" alt="chocolate.img" style="height: 15rem; width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title">strawberry flavour</h5>
+          <p class="card-text">A Strawberry ice cream is a delightful treat that captures the essence of fresh strawberries in a creamy, frozen form. </p>
+          <p class="card-text"><small class="text-body-secondary">available</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="caramel.jpeg" class="card-img-top" alt="..." style="height: 15rem;">
+        <div class="card-body">
+          <h5 class="card-title">Caramel Flavour</h5>
+          <p class="card-text">An ice cream of caramel flavor is a creamy, smooth dessert that combines the rich taste of caramel with the cool, refreshing texture of ice cream. </p>
+          <p class="card-text"><small class="text-body-secondary">available</small></p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  
+</html>
